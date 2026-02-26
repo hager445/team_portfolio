@@ -1,0 +1,26 @@
+:root {
+  /* ========= Base Backgrounds ========= */
+  --color-bg-main: rgb(33, 36, 40);
+  --color-bg-dark: rgb(22, 24, 28);
+
+  --color-bg-gradient: linear-gradient(
+    to right bottom,
+    var(--color-bg-main),
+    var(--color-bg-dark)
+  );
+
+  /* ========= Text Colors ========= */
+  --color-white: #ffffff;
+  --color-heading: #c4cfde;
+  --color-subtitle: #f9004d;
+
+  /* ========= Primary Gradient ========= */
+  --color-primary-gradient-from: #f9004d;
+  --color-primary-gradient-to: #c4003c;
+
+  --color-primary-gradient: linear-gradient(
+    145deg,
+    var(--color-primary-gradient-from) 0%,
+    var(--color-primary-gradient-to) 100%
+  );
+}

@@ -4,17 +4,149 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Company Portfolio</title>
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-    <!-- CSS File -->
+    <!-- Google Font = Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DevoraUI Portfolio</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Company Portfolio</h1>
+    <!-- ================= Navbar ================= -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="DevoraUI Logo" />
+          <span>DevoraUI</span>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#">View Demo</a>
+          <a href="#">Feature</a>
+          <a href="#">FAQ</a>
+          <a href="#">Documentation</a>
+          <a href="#">Friendly Support</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="app"></main>
+    <main id="app">
+      <!-- ================= Hero Section ============-->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            All in One <br />
+            Personal Portfolio for
+          </h1>
+
+          <h1 class="hero-changing">
+            <span id="changing-text">Photographer</span>
+          </h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="hero-cards">
+          <div class="card">
+            <div class="icon">
+              <i class="ri-flashlight-line"></i>
+            </div>
+            <h3>Fast Performance</h3>
+            <p>
+              Optimized for a smaller build size, faster dev compilation and
+              dozens of other improvements.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class="ri-smartphone-line"></i>
+            </div>
+            <h3>Perfect Responsive</h3>
+            <p>
+              Our theme is full perfect for all device. You can visit our theme
+              on all devices easily.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class="ri-customer-service-2-line"></i>
+            </div>
+            <h3>Fast & Friendly Support</h3>
+            <p>
+              We provide 24 hours support for all clients. You can purchase
+              without hesitation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Feature Strip ================= -->
+      <section class="feature-strip">
+        <div class="feature-track">
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>It’s Super Fast</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>One-click Demo Import</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>High Quality Support</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Fully Customizable</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Easy Lifetime Update</p>
+          </div>
+
+          <!-- duplicate for loop -->
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>It’s Super Fast</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>One-click Demo Import</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>High Quality Support</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Fully Customizable</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Easy Lifetime Update</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

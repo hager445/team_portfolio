@@ -56,3 +56,28 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// Performance bars animate when section appears
+(() => {
+  const perfSection = document.querySelector(".performance");
+  const bars = document.querySelectorAll(".performance .progress");
+  if (!perfSection || !bars.length) return;
+
+  // start from 0
+  bars.forEach((b) => (b.style.width = "0%"));
+
+  const obs = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        bars.forEach((bar) => {
+          const val = bar.getAttribute("data-value") || "0";
+          bar.style.width = `${val}%`;
+        });
+        obs.disconnect();
+      }
+    },
+    { threshold: 0.35 }
+  );
+
+  obs.observe(perfSection);
+})();

@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/sections/reviews.css" />
+    <link rel="stylesheet" href="./styles/sections/hero.css" />
+    <link rel="stylesheet" href="./styles/sections/cta_footer.css" />
+    <link rel="stylesheet" href="./styles/sections/footer.css" />
+    <link rel="stylesheet" href="./styles/sections/performance.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link
@@ -31,9 +35,204 @@
   <body>
 
       <h1>Company Portfolio</h1>
-    </header> -->
+    </header> 
+  
+
+    <!-- ================= Navbar ================= -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="DevoraUI Logo" />
+          <span>DevoraUI</span>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#">View Demo</a>
+          <a href="#">Feature</a>
+          <a href="#">FAQ</a>
+          <a href="#">Documentation</a>
+          <a href="#">Friendly Support</a>
+        </nav>
+      </div>
+    </header>
+
     <main id="app">
-      <section class="reviews-section">
+      <!-- ================= Hero Section ============-->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            All in One <br />
+            Personal Portfolio for
+          </h1>
+
+          <h1 class="hero-changing">
+            <span id="changing-text">Photographer</span>
+          </h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="hero-cards">
+          <div class="card">
+            <div class="icon">
+              <i class="ri-flashlight-line"></i>
+            </div>
+            <h3>Fast Performance</h3>
+            <p>
+              Optimized for a smaller build size, faster dev compilation and
+              dozens of other improvements.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class="ri-smartphone-line"></i>
+            </div>
+            <h3>Perfect Responsive</h3>
+            <p>
+              Our theme is full perfect for all device. You can visit our theme
+              on all devices easily.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class="ri-customer-service-2-line"></i>
+            </div>
+            <h3>Fast & Friendly Support</h3>
+            <p>
+              We provide 24 hours support for all clients. You can purchase
+              without hesitation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Feature Strip ================= -->
+      <section class="feature-strip">
+        <div class="feature-track">
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>It’s Super Fast</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>One-click Demo Import</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>High Quality Support</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Fully Customizable</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Easy Lifetime Update</p>
+          </div>
+
+          <!-- duplicate for loop -->
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>It’s Super Fast</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>One-click Demo Import</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>High Quality Support</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Fully Customizable</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="check">✔</span>
+            <p>Easy Lifetime Update</p>
+          </div>
+        </div>
+      </section>
+      <!-- ================= Performance ================= -->
+      <section class="performance" id="docs">
+        <div class="container">
+          <!-- LEFT -->
+          <div class="performance-text">
+            <h2>
+              Ultra <br />
+              Performance
+            </h2>
+
+            <p>
+              Inbio Page speed is so faster and takes byte times for load each
+              page. It's very easy to use, loads faster and provides better
+              performance for your website.
+            </p>
+
+            <a href="#" class="btn">View GTmetrix Report</a>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="performance-scores">
+            <h3>GTmetrix Scores</h3>
+
+            <div class="score">
+              <span>PageSpeed</span>
+              <div class="bar">
+                <div class="progress" data-value="95"></div>
+              </div>
+            </div>
+
+            <div class="score">
+              <span>YSlow</span>
+              <div class="bar">
+                <div class="progress" data-value="90"></div>
+              </div>
+            </div>
+
+            <div class="score">
+              <span>1.9s Fully Loaded</span>
+              <div class="bar">
+                <div class="progress" data-value="92"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= CTA FOOTER ================= -->
+      <section class="cta-footer" id="support">
+        <div class="cta-container">
+          <!-- avatar -->
+          <div class="cta-avatar">
+            <img src="./images/logo.png" alt="avatar" />
+          </div>
+
+          <!-- small text -->
+          <p class="cta-top">
+            PURCHASE THE INBIO AND MAKE YOUR SITE SUPER FASTER AND EASY.
+          </p>
+
+          <!-- title -->
+          <h2>Let's go to Purchase</h2>
+
+          <!-- subtitle -->
+          <p class="cta-sub">&amp; Make yourself known to the world</p>
+
+          <!-- button -->
+          <a href="#" class="cta-btn">PURCHASE NOW</a>
+        </div>
+      </section>
+      <!-- ===================== REV_SEC -->
+  <section class="reviews-section">
         <div>
           <div class="margin-x-auto w-wrapper text-center p-x-wrapper">
             <!-- Section Header -->
@@ -315,203 +514,6 @@
           </div>
         </div>
       </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-=======
-    <!-- ================= Navbar ================= -->
-    <header class="navbar">
-      <div class="container">
-        <div class="logo">
-          <img src="./images/logo.png" alt="DevoraUI Logo" />
-          <span>DevoraUI</span>
-        </div>
-
-        <nav class="nav-links">
-          <a href="#">View Demo</a>
-          <a href="#">Feature</a>
-          <a href="#">FAQ</a>
-          <a href="#">Documentation</a>
-          <a href="#">Friendly Support</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="app">
-      <!-- ================= Hero Section ============-->
-      <section class="hero">
-        <div class="hero-content">
-          <h1>
-            All in One <br />
-            Personal Portfolio for
-          </h1>
-
-          <h1 class="hero-changing">
-            <span id="changing-text">Photographer</span>
-          </h1>
-        </div>
-
-        <!-- Cards -->
-        <div class="hero-cards">
-          <div class="card">
-            <div class="icon">
-              <i class="ri-flashlight-line"></i>
-            </div>
-            <h3>Fast Performance</h3>
-            <p>
-              Optimized for a smaller build size, faster dev compilation and
-              dozens of other improvements.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="icon">
-              <i class="ri-smartphone-line"></i>
-            </div>
-            <h3>Perfect Responsive</h3>
-            <p>
-              Our theme is full perfect for all device. You can visit our theme
-              on all devices easily.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="icon">
-              <i class="ri-customer-service-2-line"></i>
-            </div>
-            <h3>Fast & Friendly Support</h3>
-            <p>
-              We provide 24 hours support for all clients. You can purchase
-              without hesitation.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= Feature Strip ================= -->
-      <section class="feature-strip">
-        <div class="feature-track">
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>It’s Super Fast</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>One-click Demo Import</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>High Quality Support</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>Fully Customizable</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>Easy Lifetime Update</p>
-          </div>
-
-          <!-- duplicate for loop -->
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>It’s Super Fast</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>One-click Demo Import</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>High Quality Support</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>Fully Customizable</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="check">✔</span>
-            <p>Easy Lifetime Update</p>
-          </div>
-        </div>
-      </section>
-      <!-- ================= Performance ================= -->
-      <section class="performance" id="docs">
-        <div class="container">
-          <!-- LEFT -->
-          <div class="performance-text">
-            <h2>
-              Ultra <br />
-              Performance
-            </h2>
-
-            <p>
-              Inbio Page speed is so faster and takes byte times for load each
-              page. It's very easy to use, loads faster and provides better
-              performance for your website.
-            </p>
-
-            <a href="#" class="btn">View GTmetrix Report</a>
-          </div>
-
-          <!-- RIGHT -->
-          <div class="performance-scores">
-            <h3>GTmetrix Scores</h3>
-
-            <div class="score">
-              <span>PageSpeed</span>
-              <div class="bar">
-                <div class="progress" data-value="95"></div>
-              </div>
-            </div>
-
-            <div class="score">
-              <span>YSlow</span>
-              <div class="bar">
-                <div class="progress" data-value="90"></div>
-              </div>
-            </div>
-
-            <div class="score">
-              <span>1.9s Fully Loaded</span>
-              <div class="bar">
-                <div class="progress" data-value="92"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ================= CTA FOOTER ================= -->
-      <section class="cta-footer" id="support">
-        <div class="cta-container">
-          <!-- avatar -->
-          <div class="cta-avatar">
-            <img src="./images/logo.png" alt="avatar" />
-          </div>
-
-          <!-- small text -->
-          <p class="cta-top">
-            PURCHASE THE INBIO AND MAKE YOUR SITE SUPER FASTER AND EASY.
-          </p>
-
-          <!-- title -->
-          <h2>Let's go to Purchase</h2>
-
-          <!-- subtitle -->
-          <p class="cta-sub">&amp; Make yourself known to the world</p>
-
-          <!-- button -->
-          <a href="#" class="cta-btn">PURCHASE NOW</a>
-        </div>
-      </section>
-
       <!-- ================= REAL FOOTER ================= -->
       <footer class="footer">
         <div class="footer-container">
@@ -525,6 +527,8 @@
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
   </body>
 </html>

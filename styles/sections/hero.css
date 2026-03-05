@@ -34,9 +34,7 @@
 }
 
 .logo img {
-  width: 45px;
-  border-radius: 50%;
-  border: 3px solid var(--color-border-light);
+  width: 100px;
 }
 
 .nav-links {

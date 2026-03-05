@@ -36,14 +36,141 @@
   }
 }
 /* ================= Responsive (ahmed hassan) ================= */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 64px;
+  }
 
+  .performance-text h2,
+  .cta-footer h2 {
+    font-size: 56px;
+  }
+
+  .card {
+    width: 300px;
+    padding: 40px 30px;
+  }
+}
+
+/* <= 992px (Tablet landscape) */
 @media (max-width: 992px) {
+  body {
+    padding-top: 82px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 16px 0;
+  }
+
+  .logo img {
+    width: 88px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 14px 18px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 50px 16px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .hero-cards {
+    margin-top: 55px;
+    gap: 22px;
+  }
+
+  .card {
+    width: 320px;
+  }
+
+  /* Performance */
+  .performance {
+    padding: 90px 0;
+  }
+
+  .performance-text h2 {
+    font-size: 50px;
+  }
+
+  .performance-scores h3 {
+    font-size: 26px;
+  }
+
   .cta-footer h2 {
     font-size: 48px;
   }
 }
 
+/* <= 768px (Tablet portrait / large phones) */
 @media (max-width: 768px) {
+  body {
+    padding-top: 76px;
+  }
+
+  .navbar .container {
+    gap: 18px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 10px 14px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.18;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  /* Feature strip */
+  .feature-strip {
+    padding: 36px 0;
+  }
+
+  .feature-track {
+    gap: 40px;
+    animation-duration: 22s;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+  }
+
+  .performance .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .performance-text p {
+    max-width: 100%;
+  }
+
+  .performance-text h2 {
+    font-size: 40px;
+  }
+
+  .bar {
+    height: 52px;
+  }
+
   .cta-footer {
     padding: 90px 20px 70px;
   }
@@ -61,7 +188,73 @@
   }
 }
 
+/* <= 576px (Phones) */
+@media (max-width: 576px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 42px 14px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  /* Cards */
+  .card {
+    padding: 34px 26px;
+    border-radius: 12px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  /* Performance */
+  .performance {
+    padding: 75px 0;
+  }
+
+  .performance-text h2 {
+    font-size: 34px;
+  }
+
+  .performance-scores h3 {
+    font-size: 22px;
+  }
+}
+
+/* <= 480px (Small phones) */
 @media (max-width: 480px) {
+  /* Hero */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  #changing-text {
+    padding-right: 6px;
+    border-right-width: 2px;
+  }
+
+  /* Feature strip */
+  .feature-track {
+    gap: 28px;
+    animation-duration: 20s;
+  }
+
+  .check {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+
   .cta-footer h2 {
     font-size: 32px;
   }
@@ -71,12 +264,10 @@
     letter-spacing: 1.5px;
   }
 
-  .footer-container {
-    justify-content: center;
-    text-align: center;
-  }
-
+  /* Footer */
   .footer-links {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 14px 18px;
   }
 }

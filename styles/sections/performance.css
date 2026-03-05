@@ -33,23 +33,21 @@
 /* BUTTON */
 .performance .btn {
   display: inline-block;
-  padding: 16px 32px;
-  background: var(--color-bg-soft);
+  padding: 18px 40px;
+  background: var(--color-bg-card);
   color: var(--color-primary);
-  border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
-  box-shadow:
-    0 10px 25px var(--color-shadow-dark),
-    inset 0 1px 0 var(--color-border-light);
-  transition: 0.35s ease;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border-light);
 }
 
 .performance .btn:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 18px 45px var(--color-shadow-dark),
-    0 0 20px rgba(255, 1, 79, 0.25);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
 }
 
 /* RIGHT */

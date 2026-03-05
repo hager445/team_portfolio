@@ -7,13 +7,7 @@
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  text-align: center;
 }
 
 .footer p {
@@ -23,6 +17,7 @@
 
 .footer-links {
   display: flex;
+  justify-content: center;
   gap: 25px;
 }
 

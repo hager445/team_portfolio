@@ -1,0 +1,33 @@
+/* ================= REAL FOOTER ================= */
+
+.footer {
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border-light);
+  padding: 25px 20px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer p {
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}

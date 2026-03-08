@@ -1,0 +1,116 @@
+/*  PERFORMANCE SECTION */
+
+.performance {
+  padding: 120px 0;
+}
+
+.performance .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT */
+.performance-text {
+  flex: 1;
+}
+
+.performance-text h2 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--color-heading);
+}
+
+.performance-text p {
+  color: var(--color-text);
+  line-height: 1.8;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.performance .btn {
+  display: inline-block;
+  padding: 18px 40px;
+  background: var(--color-bg-card);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border-light);
+}
+
+.performance .btn:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* RIGHT */
+.performance-scores {
+  flex: 1.2;
+}
+
+.performance-scores h3 {
+  margin-bottom: 30px;
+  color: var(--color-heading);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.score {
+  margin-bottom: 35px;
+}
+
+.score span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-heading);
+  opacity: 0.85;
+  font-size: 14px;
+}
+
+/*  GTmetrix Bar (Matched) */
+
+.bar {
+  width: 100%;
+  height: 58px;
+  padding: 8px;
+  border-radius: 50px;
+
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-card);
+
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #6d5dfc, #ff5f6d);
+
+  position: relative;
+  overflow: hidden;
+  transition: width 1.5s ease;
+}
+
+/* shine overlay */
+.progress::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-30%);
+}
